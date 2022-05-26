@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>music player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" type="text/css" href="pod.css">
+</head>
+
+<body>
+
+
+
+  <div class="main" >
+    <p id="logo"><i class="fa fa-music" aria-hidden="true"></i>PODCAST</p>
+    
+    <!--- left part --->
+     <div class="left">
+
+      <!--- song img --->
+      <img id="track_image">
+         <div class="volume">
+            <p id="volume_show">100</p>
+            <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+            <input type="range" min="0" max="100" value="100" onchange="volume_change()" id="volume">  
+         </div>
+
+     </div>
+   
+  
+<!--no need
+      right part --->
+     <div class="right">
+
+        <div class="show_song_no">
+          <p id="present">1</p>
+          <p>/</p>
+          <p id="total">5</p>
+        </div>
+
+       <!--- song title & artist name --->
+      <p id="title">title.mp3</p>
+
+
+      <!--- middle part --->
+      <div class="middle">
+           <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+           <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+           <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+       </div>
+
+
+       <!--- song duration part --->
+        <div class="duration">
+           <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+        </div>
+      
+    </div>
+
+
+  </div>
+</section>
+   
+  <!--- Add javascript file --->
+
+<br>
+  <form>
+<div id="text">
+  <label for="fileUpload">Upload file</label>
+  <input type="file" id="fileUpload">
+  </div>
+</form>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

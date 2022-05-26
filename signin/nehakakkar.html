@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>new</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="NK.css">
+</head>
+<body>
+
+	<div class="container">
+        <div id="upper">
+  	<ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="listen.html" class="navbar__links" id="home-page"><i class="fas fa-home"></i></a>
+          </li>
+          <li class="navbar__item">
+            <a href="listen.html#artist" class="navbar__links" id="services-page"
+              >Artist</a>
+          </li>
+    </ul>
+</div>
+
+		<div class="music-player">
+			<!--left side-->
+			<div class="player">
+				<img src="https://assets-news-bcdn.dailyhunt.in/cmd/resize/400x400_80/fetchdata16/images/c3/cf/d8/c3cfd80f7c6a0ebefacb95b946b4b6dbc7ab6abfb90c9b08644cb203e7ee214d.jpg" alt="Record" class="record">
+				<Strong><p id="title">Song Name</p></Strong>
+				<div class="slidecontainer">
+					<i class="fas fa-volume-down"></i>
+					<input type="range" min="0" max="100" value="50" class="slider">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                      
+                <div class="controls">
+       	                <button class="previous" id="previous"><i class="fas fa-step-backward" ></i></button>
+                        <button class="play-pause" id="play-pause"><i class="fas fa-play"></i></button>
+                        <button class="next" id="next"><i class="fas fa-step-forward" ></i></button>
+                </div>
+                <div class="duration">
+                <input type="range" min="0" max="100" value="0" id="duration_slider" class="duration_slider" onchange="change_duration()">
+                </div>
+			</div>
+			<!--right side-->
+			<div class="playlist">
+				<h3>NEHA KAKKAR</h3>
+				<h2>PLAYLIST...</h2>
+				<ul class="song-list">
+					<li data-src="music/Marjaneya.mp3" data-name="Marjaneya" data-index="0"><span>Marjaneya</span><span>02:57</span></li>
+                    <li data-src="music/OSakiSaki.mp3" data-name="O Saki Saki" data-index="1"><span>O Saki Saki</span><span>03:11</span></li>
+                    <li data-src="music/JinkeLiye.mp3" data-name="Jinke Liye" data-index="2"><span>Jinke Liye</span><span>04:42</span></li>
+					<li data-src="music/KhyaalRakhyaKar.mp3" data-name="Khyaal Rakhya Kar" data-index="3"><span>Khyaal Rakhya Kar</span><span>03:10</span></li>
+					<li data-src="music/DilKoKaraarAaya.mp3" data-name="Dil Ko Karaar Aaya" data-index="4"><span>Dil Ko Karaar Aaya</span><span>04:11</span></li>
+                    <li data-src="music/AashiqBanayaAapne.mp3" data-name="Aashiq Banaya Aapne" data-index="5"><span>Aashiq Banaya Aapne</span><span>03:42</span></li>
+					<li data-src="music/Bolkaffarakyahoga.mp3" data-name="Bol kaffara kya hoga" data-index="6"><span>Bol kaffara kya hoga</span><span>03:28</span></li>
+					<li data-src="music/KallaSohnaNai.mp3" data-name="Kalla Sohna Nai" data-index="7"><span>Kalla Sohna Nai </span><span>02:48</span></li>
+					<li data-src="music/DailyDaily.mp3" data-name="Daily Daily" data-index="8"><span>Daily Daily </span><span>03:16</span></li>
+					<li data-src="music/WahWaiWahh.mp3" data-name="Wah Wai Wahh" data-index="9"><span> Wah Wai Wahh</span><span>02:56</span></li>
+				</ul>
+                <audio src="" id="audio"></audio>
+       		</div>
+	    </div>
+    </div>
+    <script src="hed.js"></script>
+</body>
+</html>
+
